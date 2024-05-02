@@ -14,7 +14,7 @@ db_params = {
 }
 
 
-@app.route('/idw_et_point')
+@app.route('/')
 def get_idw_temp_point():
     try:
         table_name = "idw_et_point"
