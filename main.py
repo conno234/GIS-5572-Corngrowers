@@ -1,4 +1,4 @@
-rom flask import Flask, jsonify
+from flask import Flask, jsonify
 import psycopg2 
 import json
 import os
@@ -23,12 +23,11 @@ def fetch_geom_as_geojson(table_name, geom_column, db_params):
 
 
 @app.route('/')
-def get_idw_temp_point():
+def get_idw_et_point():
     try:
         table_name = "idw_et_point"
         geom_column = "shape"
         geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
-
         return jsonify(geojson)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
