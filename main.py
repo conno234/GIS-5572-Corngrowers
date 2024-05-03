@@ -22,7 +22,7 @@ def fetch_geom_as_geojson(table_name, geom_column, db_params):
     return geojson
 
 
-@app.route('/')
+@app.route('/et')
 def get_idw_et_point():
     try:
         table_name = "idw_et_point"
