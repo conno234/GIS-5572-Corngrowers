@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 db_params = {
     'database': 'final_project',
-    'user': os.environ.get("DB_USER"),
+    'user': 'postgres',
     'password': os.environ.get("DB_PASSWORD"),
     'host': '34.16.107.82',
     'port': '5432'
