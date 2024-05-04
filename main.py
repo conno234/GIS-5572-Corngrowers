@@ -35,7 +35,7 @@ def get_idw_et_point():
 @app.route('/gdd')
 def get_idw_gdd_point():
     try:
-        table_name = "   "
+        table_name = "'GDD_data'"
         geom_column = "shape"
         geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
         return jsonify(geojson)
