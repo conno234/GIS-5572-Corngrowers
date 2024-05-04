@@ -32,6 +32,15 @@ def get_idw_et_point():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route('/gdd')
+def get_idw_gdd_point():
+    try:
+        table_name = "test"
+        geom_column = "shape"
+        geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
+        return jsonify(geojson)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=8080)
