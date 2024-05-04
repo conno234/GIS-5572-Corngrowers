@@ -46,7 +46,7 @@ def get_idw_gdd_point():
 @app.route('/soil')
 def get_idw_soil_point():
     try:
-        table_name = "   "
+        table_name = "soil_point"
         geom_column = "shape"
         geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
         return jsonify(geojson)
