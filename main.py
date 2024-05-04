@@ -6,11 +6,11 @@ import os
 app = Flask(__name__)
 
 db_params = {
-    'database': 'final_project',
-    'user': 'postgres',
+    'database': "final_project",
+    'user': os.environ.get("DB_USER"),
     'password': "gisishard2024",
-    'host': '34.16.107.82',
-    'port': '5432'
+    'host': "34.16.107.82",
+    'port': "5432"
 }
 
 def fetch_geom_as_geojson(table_name, geom_column, db_params):
