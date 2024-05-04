@@ -35,7 +35,18 @@ def get_idw_et_point():
 @app.route('/gdd')
 def get_idw_gdd_point():
     try:
-        table_name = "test"
+        table_name = "gdd_data"
+        geom_column = "shape"
+        geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
+        return jsonify(geojson)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/soil')
+def get_idw_gdd_point():
+    try:
+        table_name = "gdd_data"
         geom_column = "shape"
         geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
         return jsonify(geojson)
