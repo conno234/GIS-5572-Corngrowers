@@ -44,7 +44,7 @@ def get_idw_gdd_point():
 
 
 @app.route('/soil')
-def get_idw_soil_point():
+def get_soil_point():
     try:
         table_name = "soil_point"
         geom_column = "shape"
