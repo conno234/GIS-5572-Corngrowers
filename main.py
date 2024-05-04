@@ -9,7 +9,7 @@ db_params = {
     'database': 'final_project',
     'user': os.environ.get("DB_USER"),
     'password': os.environ.get("DB_PASSWORD"),
-    'host': os.environ.get("DB_HOST"),
+    'host': '34.16.107.82',
     'port': '5432'
 }
 
