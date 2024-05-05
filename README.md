@@ -3,6 +3,9 @@
 A file project for GIS 5572 to create a web app that can produce growing degree days, evapotranspiration, and temperature for the state of Minnesota in order to assist the Minnesota Corngrowers Association.
 
 
+### Folders
+-ET: This folder contains the following items:
+  -
 ### Google Cloud Run URLs
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
 
