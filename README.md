@@ -3,11 +3,15 @@
 A file project for GIS 5572 to create a web app that can produce growing degree days, evapotranspiration, and temperature for the state of Minnesota in order to assist the Minnesota Corngrowers Association.
 
 
-### Folders
+### ET Folder
+-ET.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the temp_data.csv, it allows one to inteprolate evapotranspiration data for the state of Minnesota for any day in September, 2023 and save the output as point features in a PostGIS database.
 
--ET: This folder contains the following items:
+-temp_data.csv: A CSV table meant to be loaded into the working folder of the same ArcPro porject as the ET notebook. Contains NWS COOP Data for the State of Minnesota for the month of September, 2023.
 
-  --ET.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the temp_data.csv, it allows one to inteprolate evapotranspiration data for the state of Minnesota for any day in September, 2023.
+### GDD Folder
+-GDD.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the rounded_gdd_data.csv, it allows one to inteprolate growing degree dats data for the state of Minnesota for any day in September, 2023 and save the output as point features in a PostGIS database.
+
+-rounded_gdd_data.csv: A CSV table meant to be loaded into the working folder of the same ArcPro porject as the gdd notebook. Contains temperature and derived growing degree days for weather stations in the State of Minnesota for the month of September, 2023.
   
 ### Google Cloud Run URLs
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
