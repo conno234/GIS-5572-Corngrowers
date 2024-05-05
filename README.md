@@ -27,6 +27,7 @@ A file project for GIS 5572 to create a web app that can produce growing degree 
 
 ### Google Cloud Run URLs
 These links are produced by a connected Google Cloud Run instance. When the PostGIS database is running, clicking on these will lead one to GeoJSONs for their respective data.
+
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
 
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/et
