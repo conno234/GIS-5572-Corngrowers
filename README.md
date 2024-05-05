@@ -7,7 +7,7 @@ A file project for GIS 5572 to create a web app that can produce growing degree 
 
 -ET: This folder contains the following items:
 
-  -ET.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the temp_data.csv, it allows one to inteprolate evapotranspiration data for the state of Minnesota for any day in September, 2023.
+  --ET.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the temp_data.csv, it allows one to inteprolate evapotranspiration data for the state of Minnesota for any day in September, 2023.
   
 ### Google Cloud Run URLs
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
