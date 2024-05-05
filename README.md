@@ -1,5 +1,5 @@
 # GIS-5572-Corngrowers
-#### Note: Some of the code created in this projst was developed using generative AI.
+#### Note: Some of the code created in this project was developed using generative AI.
 A file project for GIS 5572 to create a web app that can produce growing degree days, evapotranspiration, and temperature for the state of Minnesota in order to assist the Minnesota Corngrowers Association.
 
 
