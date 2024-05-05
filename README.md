@@ -5,7 +5,9 @@ A file project for GIS 5572 to create a web app that can produce growing degree 
 
 ### Google Cloud Run URLs
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
+
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/et
+
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/soil
 
 ### ArcMap Viewer
