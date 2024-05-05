@@ -23,9 +23,9 @@ def fetch_geom_as_geojson(table_name, geom_column, db_params):
 
 
 @app.route('/et')
-def get_idw_et_point():
+def get_et_point():
     try:
-        table_name = "idw_et_point"
+        table_name = "et_point"
         geom_column = "shape"
         geojson = fetch_geom_as_geojson(table_name, geom_column, db_params)
         return jsonify(geojson)
