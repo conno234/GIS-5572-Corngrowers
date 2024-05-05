@@ -12,8 +12,21 @@ A file project for GIS 5572 to create a web app that can produce growing degree 
 -GDD.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the rounded_gdd_data.csv, it allows one to inteprolate growing degree dats data for the state of Minnesota for any day in September, 2023 and save the output as point features in a PostGIS database.
 
 -rounded_gdd_data.csv: A CSV table meant to be loaded into the working folder of the same ArcPro porject as the gdd notebook. Contains temperature and derived growing degree days for weather stations in the State of Minnesota for the month of September, 2023.
-  
+
+### Soil Folder
+-GDD.ipynb: A Python notebook intended to be run in ArcGIS Pro. When used in conjection with the soil_moisture.tif, it allows one to convert a TIF of soil moisture in the state of Minnesota into point features that are saved in a PostGIS database.
+
+-soil_moisture.tif: A TIF denoting soil moisture across Minnesota fetched from SMAP.
+
+### Google Cloud Run
+-Dockerfile: Used to connect to Cloud Run.
+
+-requirements.txt: Provides the needed packages and specs needed to host a flask app.
+
+-main.py: Connects to the PostGIS database and reads all three datatypes into the Cloud Run Instance.
+
 ### Google Cloud Run URLs
+These links are produced by a connected Google Cloud Run instance. When the PostGIS database is running, clicking on these will lead one to GeoJSONs for their respective data.
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/gdd
 
 -https://gis-5572-corngrowers-4jtpc5ugva-uc.a.run.app/et
